@@ -1,0 +1,10 @@
+date_added,Name,Link,lever_type,Goal,Requirements,Incentives,more_info,target_system,target_org,image_name,image_source
+March 21,Open Assistant,https://open-assistant.io/,add,Provide feedback for Open LLM,Active ⚒️,Leaderboard,,Aimed at general-purpose LLMs,open-source,openassistant_screenshot.png,
+March 21,Mozilla Rally,https://rally.mozilla.org/,add,Install browser extension; support research passively,Passive data flow 🌱,Support research,,Support general purpose research,Mozilla + academics,rally_screenshot.png,
+March 21,OpenAI Evals Library,https://github.com/openai/evals,add,Suggest new ways to evaluate LLMs,Active ⚒️,Earn GPT-4 access,,"Aimed at LLMs, especially OpenAI",OpenAI,evals_screenshot.png,
+March 21,Twitter Community Notes,https://help.twitter.com/en/using-twitter/community-notes,add,Add context to Tweets,Active ⚒️,Earn reputation,,"Aimed at social media, especially Twitter",Twitter,communitynotes_screenshot.png,
+March 15,BigCode Opt-out,https://github.com/bigcode-project/opt-out-v2,remove,Remove GitHub code from LLM dataset,Remove data 🔒,Prevent content use,,Aimed at code LLMs,BigCode,bigcode_screenshot.png,
+March 21,Glaze,https://glaze.cs.uchicago.edu/,remove,Alter art to prevent style transfer,Alter data 🔥,Protect art style,Can be useful for legal defense,Aimed at AI art,Any,glaze_screenshot.png,
+Mar 22,Spawning,https://spawning.ai/,remove,Opt-out art from generative AI training,Remove data 🔒,Prevent content use,,Aimed at AI art,,haveibeentrained.png,
+March 21,Consumer Reports Permission Slip,https://www.permissionslipcr.com/,remove,Data deletion requests,Remove data 🔒,Privacy,,Aimed at consumer data,Any,cr_permissionslip_screenshot.png,
+May 12,Fawkes,https://sandlab.cs.uchicago.edu/fawkes/,remove,Alter photos to prevent facial recognition,Alter data 🔥,Privacy,,Aimed at facial recognition,Any,fawkes_screenshot.png,
