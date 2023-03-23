@@ -1,5 +1,5 @@
 import pandas as pd
-name = 'Datalevers.org - Levers.csv'
+name = 'content.csv'
 df = pd.read_csv(name)
 out = ""
 template = """
@@ -10,7 +10,7 @@ template = """
             <ul>
             <li>{Requirements}</li>
             <li>{Incentives}</li>
-            <li>{target_system}</li>
+            <li>Context: {target_system}</li>
             </ul>
         </a>
         """
@@ -38,5 +38,5 @@ with open("index_base.html", 'r') as f:
     base = f.read()
     full_html_file = base.replace("REPLACE_ME", out)
 
-with open("index.html", 'w') as html_file:
+with open("../index.html", 'w') as html_file:
     html_file.write(full_html_file)
