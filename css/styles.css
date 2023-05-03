@@ -110,6 +110,7 @@ nav a:hover {
 
 .top-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
@@ -121,6 +122,9 @@ nav a:hover {
   margin: 5px;
   opacity: 0.5;
 }
+
+
+
 .top-row-tile:hover {
   opacity: 1;
 }

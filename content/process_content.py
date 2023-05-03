@@ -1,6 +1,7 @@
 import pandas as pd
-name = 'content.csv'
-df = pd.read_csv(name)
+
+content_csvfilename = 'content.csv'
+df = pd.read_csv(content_csvfilename)
 out = ""
 template = """
         <a href="{Link}" class="tile">
@@ -30,13 +31,14 @@ for i, row in df[df.lever_type == 'remove'].iterrows():
     out += template.format(**args)
 out += '</div></div>\n\n'
 
-# with open('output.html', 'w') as html_file:
-#     html_file.write(out)
-
 
 with open("index_base.html", 'r') as f:
     base = f.read()
-    full_html_file = base.replace("REPLACE_ME", out)
+    index_contents = base.replace("_REPLACE_ME_", out)
+
+with open("template.html", 'r') as f:
+    template = f.read()
+    full_index_html_file = template.replace("_REPLACE_ME_", index_contents)
 
 with open("../index.html", 'w') as html_file:
-    html_file.write(full_html_file)
+    html_file.write(full_index_html_file)
