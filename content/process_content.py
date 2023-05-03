@@ -36,9 +36,19 @@ with open("index_base.html", 'r') as f:
     base = f.read()
     index_contents = base.replace("_REPLACE_ME_", out)
 
+with open("impact_base.html", 'r') as f:
+    base = f.read()
+    impact_contents = base
+
 with open("template.html", 'r') as f:
     template = f.read()
     full_index_html_file = template.replace("_REPLACE_ME_", index_contents)
+    full_impact_html_file = template.replace("_REPLACE_ME_", impact_contents)
 
 with open("../index.html", 'w') as html_file:
     html_file.write(full_index_html_file)
+
+with open("../impact.html", 'w') as html_file:
+    html_file.write(full_impact_html_file)
+
+
